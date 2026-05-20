@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeLog — 개인정보처리방침</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #222;
+      margin-bottom: 40px;
+    }
+    .app-name {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .app-sub {
+      font-size: 14px;
+      color: #777;
+      margin-top: 6px;
+    }
+    .updated {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12px;
+      color: #555;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 36px 0 14px;
+      padding-left: 12px;
+      border-left: 3px solid #8B5CF6;
+    }
+    p { font-size: 14px; color: #aaa; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 14px; color: #aaa; margin-bottom: 6px; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .badge {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    .badge.green { background: rgba(16,185,129,0.12); color: #10B981; border: 1px solid rgba(16,185,129,0.25); }
+    .badge.red   { background: rgba(239,68,68,0.12);  color: #EF4444; border: 1px solid rgba(239,68,68,0.25); }
+    .badge.purple{ background: rgba(139,92,246,0.12); color: #8B5CF6; border: 1px solid rgba(139,92,246,0.25); }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 14px 0;
+    }
+    .card-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+    .row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+    .row:last-child { margin-bottom: 0; }
+    .icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+    .row-body { flex: 1; }
+    .row-label { font-size: 13px; font-weight: 600; color: #ddd; }
+    .row-desc  { font-size: 12px; color: #666; margin-top: 2px; }
+    .highlight {
+      background: rgba(139,92,246,0.08);
+      border: 1px solid rgba(139,92,246,0.2);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .highlight p { color: #b39ddb; margin: 0; font-size: 13px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 13px;
+    }
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      background: #1a1a1a;
+      color: #888;
+      font-weight: 600;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    td {
+      padding: 10px 12px;
+      color: #aaa;
+      border-bottom: 1px solid #1e1e1e;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    .contact-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 14px;
+    }
+    .contact-card a { color: #8B5CF6; text-decoration: none; }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #1e1e1e;
+      font-size: 12px;
+      color: #444;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="app-name">TradeLog</div>
+    <div class="app-sub">트레이딩 일지 & 매매 기록 앱</div>
+    <div class="updated">최종 업데이트: 2025년 5월</div>
+  </header>
+
+  <!-- 한 줄 요약 -->
+  <div class="highlight">
+    <p>📌 <strong>핵심 원칙</strong>: TradeLog는 서버가 없습니다. 모든 데이터는 오직 사용자의 기기에만 저장되며, 개발사 서버로 어떠한 개인정보도 전송되지 않습니다.</p>
+  </div>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>TradeLog는 다음 정보를 수집합니다. 모든 정보는 <strong>사용자가 직접 입력</strong>하며, 기기 외부로 전송되지 않습니다.</p>
+
+  <table>
+    <tr>
+      <th>종류</th>
+      <th>내용</th>
+      <th>저장 위치</th>
+    </tr>
+    <tr>
+      <td>거래소 API 키</td>
+      <td>바이낸스, OKX, 업비트, 빗썸 API Key / Secret Key</td>
+      <td>iOS Keychain (암호화)</td>
+    </tr>
+    <tr>
+      <td>매매 기록</td>
+      <td>코인, 방향, 진입/청산가, 손익, 전략 메모</td>
+      <td>기기 로컬 저장소</td>
+    </tr>
+    <tr>
+      <td>감정 기록</td>
+      <td>날짜별 트레이딩 심리 상태</td>
+      <td>기기 로컬 저장소</td>
+    </tr>
+    <tr>
+      <td>목표 / 규칙 / 전략</td>
+      <td>사용자 정의 목표, 매매 원칙, 전략 노트</td>
+      <td>기기 로컬 저장소</td>
+    </tr>
+  </table>
+
+  <h2>2. 수집하지 않는 정보</h2>
+  <div class="badge-row">
+    <span class="badge red">이름 / 이메일</span>
+    <span class="badge red">위치 정보</span>
+    <span class="badge red">광고 식별자 (IDFA)</span>
+    <span class="badge red">기기 고유 번호</span>
+    <span class="badge red">사용 분석 데이터</span>
+    <span class="badge red">충돌 리포트</span>
+    <span class="badge red">연락처 / 카메라</span>
+  </div>
+  <p>TradeLog는 광고를 표시하지 않으며, 사용 패턴을 추적하거나 분석하지 않습니다.</p>
+
+  <h2>3. 데이터 저장 및 보호</h2>
+
+  <div class="card">
+    <div class="card-title">🔒 API 키 보호</div>
+    <div class="row">
+      <span class="icon">✅</span>
+      <div class="row-body">
+        <div class="row-label">iOS Keychain 저장</div>
+        <div class="row-desc">하드웨어 수준 암호화 적용. 앱이 삭제되어도 안전하게 관리됩니다.</div>
+      </div>
+    </div>
+    <div class="row">
+      <span class="icon">✅</span>
+      <div class="row-body">
+        <div class="row-label">iCloud 백업 제외</div>
+        <div class="row-desc">API 키는 클라우드 백업에 포함되지 않습니다.</div>
+      </div>
+    </div>
+    <div class="row">
+      <span class="icon">✅</span>
+      <div class="row-body">
+        <div class="row-label">서버 전송 없음</div>
+        <div class="row-desc">API 키는 해당 거래소(바이낸스, OKX 등) 서버에만 직접 전송됩니다. TradeLog 서버는 존재하지 않습니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>4. 거래소 API 연동 안내</h2>
+  <p>거래 내역 가져오기 기능은 사용자가 입력한 API 키를 사용하여 각 거래소 서버에 직접 요청을 보냅니다.</p>
+  <ul>
+    <li>전송 대상: 바이낸스 (binance.com), OKX (okx.com), 업비트 (upbit.com), 빗썸 (bithumb.com)</li>
+    <li>전송 내용: API 인증 정보 (서명된 요청)</li>
+    <li>수신 내용: 해당 거래소의 거래 내역 (기기에만 저장)</li>
+  </ul>
+  <p>각 거래소의 개인정보처리방침은 해당 거래소 웹사이트를 참고하시기 바랍니다.</p>
+
+  <div class="badge-row">
+    <span class="badge green">읽기 전용 API 권장</span>
+    <span class="badge purple">출금 · 매매 권한 사용 불가</span>
+  </div>
+  <p>TradeLog는 읽기 전용 API 키 사용을 강력히 권장합니다. 읽기 전용 키는 잔고 조회 및 내역 조회만 가능하며, 출금이나 매매를 실행할 수 없습니다.</p>
+
+  <h2>5. 제3자 공유</h2>
+  <p>TradeLog는 사용자 데이터를 <strong>어떠한 제3자와도 공유하지 않습니다.</strong></p>
+  <ul>
+    <li>광고 네트워크에 데이터 제공: ✗</li>
+    <li>분석 서비스(Firebase, Mixpanel 등) 사용: ✗</li>
+    <li>제3자 SDK 포함: ✗</li>
+  </ul>
+
+  <h2>6. 데이터 삭제</h2>
+  <p>앱 내 <strong>설정 → 모든 데이터 삭제</strong> 기능으로 저장된 모든 데이터(매매 기록, API 키 포함)를 즉시 영구 삭제할 수 있습니다.</p>
+  <p>앱을 기기에서 삭제하면 로컬에 저장된 모든 데이터가 함께 삭제됩니다.</p>
+
+  <h2>7. 아동 보호</h2>
+  <p>TradeLog는 13세 미만 아동을 대상으로 하지 않습니다. 금융 투자 관련 앱으로, 성인 사용자를 위해 설계되었습니다.</p>
+
+  <h2>8. 방침 변경</h2>
+  <p>본 개인정보처리방침이 변경될 경우, 앱 업데이트를 통해 사용자에게 안내됩니다. 변경 사항은 이 페이지에 게시되며 최종 업데이트 날짜가 표시됩니다.</p>
+
+  <h2>9. 문의</h2>
+  <div class="contact-card">
+    <p>개인정보처리방침에 대한 문의사항은 아래로 연락 주세요.</p>
+    <br />
+    <p><strong style="color:#ddd;">이메일:</strong> <a href="mailto:toby.official.kr@gmail.com">toby.official.kr@gmail.com</a></p>
+    <p style="margin-top:8px"><strong style="color:#ddd;">앱 이름:</strong> TradeLog</p>
+    <p style="margin-top:4px"><strong style="color:#ddd;">개발자:</strong> TobyMin</p>
+  </div>
+
+  <footer>
+    © 2025 TradeLog · All rights reserved<br />
+    본 앱은 투자 조언을 제공하지 않습니다. 모든 투자 결정은 사용자 본인의 책임입니다.
+  </footer>
+
+</div>
+</body>
+</html>
